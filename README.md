@@ -42,4 +42,3 @@ POST	/api/v1/notifications/send	Отправить email-уведомление
   "operation": "CREATE|DELETE",
   "email": "user@example.com"
 }
-
