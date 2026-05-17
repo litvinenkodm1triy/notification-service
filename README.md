@@ -22,23 +22,3 @@ Spring Mail
 Testcontainers (Kafka + GreenMail)
 
 Maven
-
-📦 Эндпоинты
-Метод	Путь	Описание
-POST	/api/v1/notifications/send	Отправить email-уведомление
-{
-  "email": "user@example.com",
-  "operation": "CREATE"
-}
-🔄 Kafka
-Топик: user-events
-
-Формат сообщения:
-
-{
-  "operation": "CREATE|DELETE",
-  "email": "user@example.com"
-}
-  "operation": "CREATE|DELETE",
-  "email": "user@example.com"
-}
