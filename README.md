@@ -40,8 +40,4 @@ json
   "operation": "CREATE|DELETE",
   "email": "user@example.com"
 }
-🐳 Запуск с Docker Compose
-yaml
-# Требуются зависимые сервисы:
-# - Kafka (bootstrap-servers)
-# - SMTP сервер (MailHog или другой)
+
