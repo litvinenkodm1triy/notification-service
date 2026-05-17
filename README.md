@@ -1,3 +1,4 @@
+Notification Service
 Микросервис для отправки email-уведомлений о событиях пользователей (создание/удаление аккаунта).
 
 🚀 Основные возможности
@@ -25,9 +26,6 @@ Maven
 📦 Эндпоинты
 Метод	Путь	Описание
 POST	/api/v1/notifications/send	Отправить email-уведомление
-Пример запроса:
-
-json
 {
   "email": "user@example.com",
   "operation": "CREATE"
@@ -47,10 +45,3 @@ yaml
 # Требуются зависимые сервисы:
 # - Kafka (bootstrap-servers)
 # - SMTP сервер (MailHog или другой)
-Переменные окружения:
-
-Переменная	Значение по умолчанию
-SERVER_PORT	8082
-SPRING_KAFKA_BOOTSTRAP_SERVERS	localhost:9092
-SPRING_MAIL_HOST	mailhog
-SPRING_MAIL_PORT	1025
