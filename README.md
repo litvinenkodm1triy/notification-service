@@ -35,8 +35,10 @@ POST	/api/v1/notifications/send	Отправить email-уведомление
 
 Формат сообщения:
 
-json
 {
+  "operation": "CREATE|DELETE",
+  "email": "user@example.com"
+}
   "operation": "CREATE|DELETE",
   "email": "user@example.com"
 }
