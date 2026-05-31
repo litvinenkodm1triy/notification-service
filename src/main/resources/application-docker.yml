@@ -1,0 +1,19 @@
+spring:
+  kafka:
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:kafka:9092}
+  mail:
+    host: ${SPRING_MAIL_HOST:mailhog}
+    port: ${SPRING_MAIL_PORT:1025}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://eureka-server:8761/eureka/}
+  instance:
+    prefer-ip-address: true
+    hostname: ${HOSTNAME:localhost}
+
+logging:
+  level:
+    com.example: INFO
+    org.springframework.cloud: WARN
